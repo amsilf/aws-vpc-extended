@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+	  <title>Simple CRUD app</title>
+	  
+	  <script src="lib/jquery-3.3.1.min.js"></script>
+	  <script src="js/rest.js"></script>
+	</head>
+
+	<body>
+		<button id="create" type="button">Create</button>
+		<button id="read" type="button">Read</button>
+		<button id="update" type="button">Update</button>
+		<button id="delete" type="button">Delete</button>	
+		
+		<script>
+			$("#create").click(function() { console.log('create'); restCall('<url1>', 'PUT'); });
+			$("#read").click(function() { console.log('read'); restCall('<url1>', 'GET'); });
+			$("#update").click(function() { console.log('update'); restCall('<url1>', 'POST'); });
+			$("#delete").click(function() { console.log('delete'); restCall('<url1>', 'DELETE'); });
+		</script>
+	</body>
+
+</html>
